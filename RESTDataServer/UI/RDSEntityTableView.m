@@ -12,6 +12,7 @@
 @interface RDSEntityTableView ()
 
 @property (nonatomic, weak) IBOutlet NSButton *addButton;
+@property (nonatomic, weak) IBOutlet NSButton *duplicateButton;
 @property (nonatomic, weak) IBOutlet NSButton *deleteButton;
 
 @end
@@ -169,6 +170,26 @@
     else
     {
         [self.deleteButton setEnabled:NO];
+    }
+}
+
+#pragma mark - Actions
+
+-(IBAction)duplicateRow:(id)sender
+{
+    if (self.selectedRow<0)
+        return;
+    
+    NSManagedObject *selectedObject = [self.entityController.arrangedObjects objectAtIndex:self.selectedRow];
+    NSManagedObjectContext *context = self.stack.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:self.entityController.entityName inManagedObjectContext:context];
+    NSManagedObject *newObject = [[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:context];
+    if (newObject)
+    {
+        NSArray *keys = [[[selectedObject entity] attributesByName] allKeys];
+        NSDictionary *dict = [selectedObject dictionaryWithValuesForKeys:keys];
+        [newObject setValuesForKeysWithDictionary:dict];
+        [self.stack saveAndNotifyBlocks];
     }
 }
 
