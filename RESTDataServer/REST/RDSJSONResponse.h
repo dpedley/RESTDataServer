@@ -10,4 +10,7 @@
 
 @interface RDSJSONResponse : HTTPDataResponse
 
++(instancetype)withJSONData:(NSData *)jsonData;
++(instancetype)withJSONString:(NSString *)jsonString;
+
 @end

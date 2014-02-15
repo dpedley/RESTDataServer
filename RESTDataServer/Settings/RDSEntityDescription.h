@@ -1,5 +1,5 @@
 //
-//  Entity.h
+//  RDSEntityDescription.h
 //  RESTDataServer
 //
 //  Created by Douglas Pedley on 1/31/14.
@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 
 
-@interface Entity : NSManagedObject
+@interface RDSEntityDescription : NSManagedObject
 
 @property (nonatomic, retain) NSString * idAttribute;
 @property (nonatomic, retain) NSString * name;

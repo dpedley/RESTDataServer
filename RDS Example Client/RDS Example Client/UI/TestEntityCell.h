@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TestEntity;
+
 @interface TestEntityCell : UITableViewCell
+
+-(void)configureWithTestEntity:(TestEntity *)testEntity;
 
 @end

@@ -8,9 +8,13 @@
 
 #import "AppSettings.h"
 
-
-@implementation AppSettings
+@implementation AppSettings 
 
 @dynamic basePath;
+
++(NSString *)entityName
+{
+    return @"AppSettings";
+}
 
 @end

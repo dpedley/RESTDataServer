@@ -6,12 +6,17 @@
 //  Copyright (c) 2014 dpedley.com. All rights reserved.
 //
 
-#import "Entity.h"
+#import "RDSEntityDescription.h"
 
 
-@implementation Entity
+@implementation RDSEntityDescription
 
 @dynamic idAttribute;
 @dynamic name;
+
++(NSString *)entityName
+{
+    return @"RDSEntityDescription";
+}
 
 @end

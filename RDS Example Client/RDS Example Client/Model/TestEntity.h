@@ -16,4 +16,6 @@
 @property (nonatomic, retain) NSNumber * testID;
 @property (nonatomic, retain) NSString * testName;
 
++(NSString *)idAttribute;
+
 @end

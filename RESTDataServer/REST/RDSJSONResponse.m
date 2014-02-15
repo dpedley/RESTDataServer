@@ -10,4 +10,19 @@
 
 @implementation RDSJSONResponse
 
++(instancetype)withJSONString:(NSString *)jsonString
+{
+    return [[self alloc] initWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+}
+
++(instancetype)withJSONData:(NSData *)jsonData
+{
+    return [[self alloc] initWithData:jsonData];
+}
+
+-(NSDictionary *)httpHeaders
+{
+    return @{@"Content-type": @"application/json"};
+}
+
 @end

@@ -8,14 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface RDSAppDelegate : NSObject <NSApplicationDelegate>
+@class RDSEntityTableView;
+
+@interface RDSAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate, NSWindowDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, strong) NSArray *entities;
+@property (nonatomic, weak) IBOutlet RDSEntityTableView *entityTable;
+@property (nonatomic, weak) IBOutlet NSView *entityTableContainer;
 
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
-- (IBAction)saveAction:(id)sender;
+@property (nonatomic, strong, readonly) HTTPServer *server;
 
 @end

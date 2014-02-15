@@ -15,4 +15,9 @@
 @dynamic testID;
 @dynamic testName;
 
++(NSString *)idAttribute
+{
+    return @"testID";
+}
+
 @end

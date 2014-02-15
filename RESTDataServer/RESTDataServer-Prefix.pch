@@ -6,4 +6,12 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+    #import "DDLog.h"
+    #import "DDTTYLogger.h"
+    #import "HTTPLogging.h"
+    #import "RDSConnection.h"
+    #import "AppSettings.h"
+    #import "RDSCoreDataStack.h"
 #endif
+
+extern int ddLogLevel;

@@ -8,6 +8,10 @@
 
 #import "RDSRequest.h"
 
-@interface RDSPostEntity : RDSRequest
+@interface RDSCreateRequest : RDSRequest
+
+@property (nonatomic, copy) NSString *entityID;
+
++ (instancetype)request:(HTTPMessage *)request connection:(HTTPConnection *)connection URI:(NSString *)path;
 
 @end
