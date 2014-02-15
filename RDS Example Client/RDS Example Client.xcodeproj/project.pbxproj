@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD1C09B9189CB3EA006AB14F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1C09B8189CB3EA006AB14F /* Foundation.framework */; };
+		CD1C09BB189CB3EA006AB14F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1C09BA189CB3EA006AB14F /* CoreGraphics.framework */; };
+		CD1C09BD189CB3EA006AB14F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1C09BC189CB3EA006AB14F /* UIKit.framework */; };
+		CD1C09C3189CB3EA006AB14F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD1C09C1189CB3EA006AB14F /* InfoPlist.strings */; };
+		CD1C09C5189CB3EA006AB14F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1C09C4189CB3EA006AB14F /* main.m */; };
+		CD1C09C9189CB3EA006AB14F /* RDSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1C09C8189CB3EA006AB14F /* RDSAppDelegate.m */; };
+		CD1C09CC189CB3EA006AB14F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1C09CA189CB3EA006AB14F /* Main_iPhone.storyboard */; };
+		CD1C09CF189CB3EA006AB14F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1C09CD189CB3EA006AB14F /* Main_iPad.storyboard */; };
+		CD1C09D2189CB3EA006AB14F /* RDSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1C09D1189CB3EA006AB14F /* RDSMasterViewController.m */; };
+		CD1C09D5189CB3EA006AB14F /* RDSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1C09D4189CB3EA006AB14F /* RDSDetailViewController.m */; };
+		CD1C09D7189CB3EA006AB14F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1C09D6189CB3EA006AB14F /* Images.xcassets */; };
+		CD1C09DE189CB3EB006AB14F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1C09DD189CB3EB006AB14F /* XCTest.framework */; };
+		CD1C09DF189CB3EB006AB14F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1C09B8189CB3EA006AB14F /* Foundation.framework */; };
+		CD1C09E0189CB3EB006AB14F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1C09BC189CB3EA006AB14F /* UIKit.framework */; };
+		CD1C09E8189CB3EB006AB14F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD1C09E6189CB3EB006AB14F /* InfoPlist.strings */; };
+		CD1C09EA189CB3EB006AB14F /* RDS_Example_ClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1C09E9189CB3EB006AB14F /* RDS_Example_ClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD1C09E1189CB3EB006AB14F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD1C09AD189CB3EA006AB14F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD1C09B4189CB3EA006AB14F;
+			remoteInfo = "RDS Example Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD1C09B5189CB3EA006AB14F /* RDS Example Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RDS Example Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1C09B8189CB3EA006AB14F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD1C09BA189CB3EA006AB14F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD1C09BC189CB3EA006AB14F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD1C09C0189CB3EA006AB14F /* RDS Example Client-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDS Example Client-Info.plist"; sourceTree = "<group>"; };
+		CD1C09C2189CB3EA006AB14F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD1C09C4189CB3EA006AB14F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD1C09C6189CB3EA006AB14F /* RDS Example Client-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDS Example Client-Prefix.pch"; sourceTree = "<group>"; };
+		CD1C09C7189CB3EA006AB14F /* RDSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDSAppDelegate.h; sourceTree = "<group>"; };
+		CD1C09C8189CB3EA006AB14F /* RDSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDSAppDelegate.m; sourceTree = "<group>"; };
+		CD1C09CB189CB3EA006AB14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		CD1C09CE189CB3EA006AB14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		CD1C09D0189CB3EA006AB14F /* RDSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDSMasterViewController.h; sourceTree = "<group>"; };
+		CD1C09D1189CB3EA006AB14F /* RDSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDSMasterViewController.m; sourceTree = "<group>"; };
+		CD1C09D3189CB3EA006AB14F /* RDSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDSDetailViewController.h; sourceTree = "<group>"; };
+		CD1C09D4189CB3EA006AB14F /* RDSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDSDetailViewController.m; sourceTree = "<group>"; };
+		CD1C09D6189CB3EA006AB14F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD1C09DC189CB3EB006AB14F /* RDS Example ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RDS Example ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1C09DD189CB3EB006AB14F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CD1C09E5189CB3EB006AB14F /* RDS Example ClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDS Example ClientTests-Info.plist"; sourceTree = "<group>"; };
+		CD1C09E7189CB3EB006AB14F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD1C09E9189CB3EB006AB14F /* RDS_Example_ClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDS_Example_ClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD1C09B2189CB3EA006AB14F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1C09BB189CB3EA006AB14F /* CoreGraphics.framework in Frameworks */,
+				CD1C09BD189CB3EA006AB14F /* UIKit.framework in Frameworks */,
+				CD1C09B9189CB3EA006AB14F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1C09D9189CB3EB006AB14F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1C09DE189CB3EB006AB14F /* XCTest.framework in Frameworks */,
+				CD1C09E0189CB3EB006AB14F /* UIKit.framework in Frameworks */,
+				CD1C09DF189CB3EB006AB14F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD1C09AC189CB3EA006AB14F = {
+			isa = PBXGroup;
+			children = (
+				CD1C09BE189CB3EA006AB14F /* RDS Example Client */,
+				CD1C09E3189CB3EB006AB14F /* RDS Example ClientTests */,
+				CD1C09B7189CB3EA006AB14F /* Frameworks */,
+				CD1C09B6189CB3EA006AB14F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD1C09B6189CB3EA006AB14F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C09B5189CB3EA006AB14F /* RDS Example Client.app */,
+				CD1C09DC189CB3EB006AB14F /* RDS Example ClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD1C09B7189CB3EA006AB14F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C09B8189CB3EA006AB14F /* Foundation.framework */,
+				CD1C09BA189CB3EA006AB14F /* CoreGraphics.framework */,
+				CD1C09BC189CB3EA006AB14F /* UIKit.framework */,
+				CD1C09DD189CB3EB006AB14F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD1C09BE189CB3EA006AB14F /* RDS Example Client */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C09C7189CB3EA006AB14F /* RDSAppDelegate.h */,
+				CD1C09C8189CB3EA006AB14F /* RDSAppDelegate.m */,
+				CD1C09CA189CB3EA006AB14F /* Main_iPhone.storyboard */,
+				CD1C09CD189CB3EA006AB14F /* Main_iPad.storyboard */,
+				CD1C09D0189CB3EA006AB14F /* RDSMasterViewController.h */,
+				CD1C09D1189CB3EA006AB14F /* RDSMasterViewController.m */,
+				CD1C09D3189CB3EA006AB14F /* RDSDetailViewController.h */,
+				CD1C09D4189CB3EA006AB14F /* RDSDetailViewController.m */,
+				CD1C09D6189CB3EA006AB14F /* Images.xcassets */,
+				CD1C09BF189CB3EA006AB14F /* Supporting Files */,
+			);
+			path = "RDS Example Client";
+			sourceTree = "<group>";
+		};
+		CD1C09BF189CB3EA006AB14F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C09C0189CB3EA006AB14F /* RDS Example Client-Info.plist */,
+				CD1C09C1189CB3EA006AB14F /* InfoPlist.strings */,
+				CD1C09C4189CB3EA006AB14F /* main.m */,
+				CD1C09C6189CB3EA006AB14F /* RDS Example Client-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD1C09E3189CB3EB006AB14F /* RDS Example ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C09E9189CB3EB006AB14F /* RDS_Example_ClientTests.m */,
+				CD1C09E4189CB3EB006AB14F /* Supporting Files */,
+			);
+			path = "RDS Example ClientTests";
+			sourceTree = "<group>";
+		};
+		CD1C09E4189CB3EB006AB14F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C09E5189CB3EB006AB14F /* RDS Example ClientTests-Info.plist */,
+				CD1C09E6189CB3EB006AB14F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD1C09B4189CB3EA006AB14F /* RDS Example Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1C09ED189CB3EB006AB14F /* Build configuration list for PBXNativeTarget "RDS Example Client" */;
+			buildPhases = (
+				CD1C09B1189CB3EA006AB14F /* Sources */,
+				CD1C09B2189CB3EA006AB14F /* Frameworks */,
+				CD1C09B3189CB3EA006AB14F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RDS Example Client";
+			productName = "RDS Example Client";
+			productReference = CD1C09B5189CB3EA006AB14F /* RDS Example Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD1C09DB189CB3EB006AB14F /* RDS Example ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1C09F0189CB3EB006AB14F /* Build configuration list for PBXNativeTarget "RDS Example ClientTests" */;
+			buildPhases = (
+				CD1C09D8189CB3EB006AB14F /* Sources */,
+				CD1C09D9189CB3EB006AB14F /* Frameworks */,
+				CD1C09DA189CB3EB006AB14F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1C09E2189CB3EB006AB14F /* PBXTargetDependency */,
+			);
+			name = "RDS Example ClientTests";
+			productName = "RDS Example ClientTests";
+			productReference = CD1C09DC189CB3EB006AB14F /* RDS Example ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD1C09AD189CB3EA006AB14F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RDS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dpedley.com;
+				TargetAttributes = {
+					CD1C09DB189CB3EB006AB14F = {
+						TestTargetID = CD1C09B4189CB3EA006AB14F;
+					};
+				};
+			};
+			buildConfigurationList = CD1C09B0189CB3EA006AB14F /* Build configuration list for PBXProject "RDS Example Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD1C09AC189CB3EA006AB14F;
+			productRefGroup = CD1C09B6189CB3EA006AB14F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD1C09B4189CB3EA006AB14F /* RDS Example Client */,
+				CD1C09DB189CB3EB006AB14F /* RDS Example ClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD1C09B3189CB3EA006AB14F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1C09CF189CB3EA006AB14F /* Main_iPad.storyboard in Resources */,
+				CD1C09D7189CB3EA006AB14F /* Images.xcassets in Resources */,
+				CD1C09CC189CB3EA006AB14F /* Main_iPhone.storyboard in Resources */,
+				CD1C09C3189CB3EA006AB14F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1C09DA189CB3EB006AB14F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1C09E8189CB3EB006AB14F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD1C09B1189CB3EA006AB14F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1C09C9189CB3EA006AB14F /* RDSAppDelegate.m in Sources */,
+				CD1C09D2189CB3EA006AB14F /* RDSMasterViewController.m in Sources */,
+				CD1C09C5189CB3EA006AB14F /* main.m in Sources */,
+				CD1C09D5189CB3EA006AB14F /* RDSDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1C09D8189CB3EB006AB14F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1C09EA189CB3EB006AB14F /* RDS_Example_ClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD1C09E2189CB3EB006AB14F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD1C09B4189CB3EA006AB14F /* RDS Example Client */;
+			targetProxy = CD1C09E1189CB3EB006AB14F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD1C09C1189CB3EA006AB14F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1C09C2189CB3EA006AB14F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD1C09CA189CB3EA006AB14F /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1C09CB189CB3EA006AB14F /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CD1C09CD189CB3EA006AB14F /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1C09CE189CB3EA006AB14F /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CD1C09E6189CB3EB006AB14F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD1C09E7189CB3EB006AB14F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD1C09EB189CB3EB006AB14F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD1C09EC189CB3EB006AB14F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD1C09EE189CB3EB006AB14F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDS Example Client/RDS Example Client-Prefix.pch";
+				INFOPLIST_FILE = "RDS Example Client/RDS Example Client-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD1C09EF189CB3EB006AB14F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDS Example Client/RDS Example Client-Prefix.pch";
+				INFOPLIST_FILE = "RDS Example Client/RDS Example Client-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CD1C09F1189CB3EB006AB14F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDS Example Client.app/RDS Example Client";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDS Example Client/RDS Example Client-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RDS Example ClientTests/RDS Example ClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CD1C09F2189CB3EB006AB14F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDS Example Client.app/RDS Example Client";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDS Example Client/RDS Example Client-Prefix.pch";
+				INFOPLIST_FILE = "RDS Example ClientTests/RDS Example ClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD1C09B0189CB3EA006AB14F /* Build configuration list for PBXProject "RDS Example Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1C09EB189CB3EB006AB14F /* Debug */,
+				CD1C09EC189CB3EB006AB14F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1C09ED189CB3EB006AB14F /* Build configuration list for PBXNativeTarget "RDS Example Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1C09EE189CB3EB006AB14F /* Debug */,
+				CD1C09EF189CB3EB006AB14F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD1C09F0189CB3EB006AB14F /* Build configuration list for PBXNativeTarget "RDS Example ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1C09F1189CB3EB006AB14F /* Debug */,
+				CD1C09F2189CB3EB006AB14F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD1C09AD189CB3EA006AB14F /* Project object */;
+}

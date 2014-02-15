@@ -1,0 +1,67 @@
+  718  telnet 172.28.211.40 41771
+  735  curl http://localhost:41771/TestEntity/17
+  737  curl http://localhost:41771/TestEntity/17
+  738  curl http://localhost:41771/TestEntity/17
+  739  curl http://localhost:41771/TestEntity/12
+  740  curl http://localhost:41771/TestEntity/21
+  741  curl http://localhost:41771/TestEntity/21
+  742  curl http://localhost:41771/TestEntity/21
+  743  curl http://localhost:41771/TestEntity/21
+  749  curl http://localhost:41771/TestEntity/21
+  750  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  751  curl http://localhost:41771/TestEntity
+  752  curl http://localhost:41771/TestEntity
+  753  curl http://localhost:41771/{TestEntity}
+  754  curl http://localhost:41771/\{TestEntity\}
+  755  curl http://localhost:41771/\\\{TestEntity\\\}
+  757  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  758  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  759  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  761  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"TestEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{TestEntity\}'
+  762  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  763  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"TEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{TEntity\}'
+  765  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  766  curl -X POST -H "Content-Type: application/json" -d '{"testName":"t3","testID":29,"testFloat":12.5}'  http://localhost:41771/TEntity
+  767  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"TestEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{TestEntity\}'
+  769  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  770  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  771  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"TestEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{TestEntity\}'
+  772  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"TestEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{TestEntity\}'
+  773  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test3","testID":29,"testFloat":12.5}'  http://localhost:41771/TestEntity
+  774  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test0","testID":7,"testFloat":1.0}'  http://localhost:41771/TestEntity
+  775  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test1","testID":1,"testFloat":3.3}'  http://localhost:41771/TestEntity
+  776  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"TEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{TEntity\}'
+  777  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"TEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{TEntity\}'
+  778  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"SEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{SEntity\}'
+  779  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"UEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{UEntity\}'
+  780  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"VEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{VEntity\}'
+  781  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"WEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{WEntity\}'
+  782  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"XEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{XEntity\}'
+  783  curl -X POST -H "Content-Type: application/json" -d '{"idAttribute":"testID","name":"YEntity","schema":[{"name":"testFloat","type":"NSDouble"},{"name":"testID","type":"NSInteger32"},{"name":"testName","type":"NSString"}]}' 'http://localhost:41771/\{YEntity\}'
+  784  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test2","testID":2,"testFloat":32.1}'  http://localhost:41771/TestEntity
+  785  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test4","testID":4,"testFloat":3.8}'  http://localhost:41771/TestEntity
+  786  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test5","testID":5,"testFloat":5.8}'  http://localhost:41771/TestEntity
+  787  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test6","testID":6,"testFloat":6.8}'  http://localhost:41771/TestEntity
+  788  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test8","testID":8,"testFloat":8.6}'  http://localhost:41771/TestEntity
+  789  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test9","testID":9,"testFloat":9.6}'  http://localhost:41771/TestEntity
+  790  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test10","testID":10,"testFloat":10.6}'  http://localhost:41771/TestEntity
+  791  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test11","testID":11,"testFloat":11.6}'  http://localhost:41771/TestEntity
+  792  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test12","testID":12,"testFloat":12.6}'  http://localhost:41771/TestEntity
+  793  sleep 10 ; echo "hello";  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test13","testID":13,"testFloat":13.6}'  http://localhost:41771/TestEntity
+  794  sleep 10 ; echo "hello";  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test14","testID":14,"testFloat":14.6}'  http://localhost:41771/TestEntity
+  795  sleep 10 ; echo "hello";  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test15","testID":15,"testFloat":15.6}'  http://localhost:41771/TestEntity
+  796  sleep 10 ; echo "hello";  curl -X POST -H "Content-Type: application/json" -d '{"testName":"test16","testID":16,"testFloat":16.1}'  http://localhost:41771/TestEntity
+  797  sleep 5 ; echo "hello";  curl -X DELETE -H "Content-Type: application/json" http://localhost:41771/TestEntity/16
+  798  sleep 5 ; echo "hello";  curl -X DELETE -H "Content-Type: application/json" http://localhost:41771/TestEntity/16
+  799  sleep 5 ; echo "hello";  curl -X DELETE -H "Content-Type: application/json" http://localhost:41771/TestEntity/16
+  800  sleep 5 ; echo "hello";  curl -X DELETE -H "Content-Type: application/json" http://localhost:41771/TestEntity/15
+  801  sleep 5 ; echo "hello";  curl -X DELETE -H "Content-Type: application/json" 'http://localhost:41771/\{YEntity\}'
+  802  sleep 5 ; echo "hello";  curl -X DELETE -H "Content-Type: application/json" 'http://localhost:41771/\{XEntity\}'
+  803   curl -X DELETE -H "Content-Type: application/json" 'http://localhost:41771/\{WEntity\}'
+  804   curl -X DELETE -H "Content-Type: application/json" 'http://localhost:41771/\{VEntity\}'
+  805   curl -X DELETE -H "Content-Type: application/json" 'http://localhost:41771/\{UEntity\}'
+  806   curl -X DELETE -H "Content-Type: application/json" 'http://localhost:41771/\{SEntity\}'
+  807   curl -X DELETE -H "Content-Type: application/json" 'http://localhost:41771/\{TEntity\}'
+  808  curl -X DELETE -H "Content-Type: application/json" http://localhost:41771/TestEntity/14
+  809  curl -X DELETE -H "Content-Type: application/json" http://localhost:41771/TestEntity/13
+  810  history | grep 41771 > curl_examples.txt

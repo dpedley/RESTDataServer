@@ -1,0 +1,9 @@
+[submodule "Externals/CocoaHTTPServer"]
+	path = Externals/CocoaHTTPServer
+	url = https://github.com/robbiehanson/CocoaHTTPServer.git
+[submodule "Externals/CocoaAsyncSocket"]
+	path = Externals/CocoaAsyncSocket
+	url = https://github.com/robbiehanson/CocoaAsyncSocket.git
+[submodule "Externals/MagicalRecord"]
+	path = Externals/MagicalRecord
+	url = https://github.com/magicalpanda/MagicalRecord.git
