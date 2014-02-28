@@ -35,7 +35,7 @@ typedef void(^RDSClientUpdateCompletion)(BOOL success, NSDictionary *responseDic
  *  @param aManagedObjectClass subclass of a managed object
  *  @param entityDescription the classes entity
  */
--(void)registerClass:(Class)aManagedObjectClass usingDescription:(NSEntityDescription *)entityDescription completion:(RDSClientRegisterCompletion)completion;
+-(void)registerClass:(Class)aManagedObjectClass fromContext:(NSManagedObjectContext *)context completion:(RDSClientRegisterCompletion)completion;
 
 /**
  *  These are the Fetch Methods

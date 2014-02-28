@@ -108,6 +108,7 @@
                         if (insertedObject)
                         {
                             NSArray *allKeys = [postDictionary allKeys];
+                            NSDictionary *attributesByKey = [entityDescription attributesByName];
                             for (NSString *key in allKeys)
                             {
                                 id theObject = [postDictionary objectForKey:key];
@@ -123,7 +124,9 @@
                                 else
                                 {
                                     @try {
-                                        [insertedObject setValue:[postDictionary objectForKey:key] forKey:key];
+                                        NSValue *value = [postDictionary objectForKey:key];
+                                        NSValue *translatedValue = [self translateValue:value forAttribute:attributesByKey[key]];
+                                        [insertedObject setValue:translatedValue forKey:key];
                                     }
                                     @catch (NSException *exception) {
                                         DDLogCError(@"Field mapping error key/entity: %@/%@", key, entityName);

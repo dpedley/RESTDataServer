@@ -35,6 +35,7 @@ typedef enum
 - (NSString *)attributeValueClassNameFromType:(NSAttributeType)attributeType;
 - (NSAttributeType)attributeTypeFromString:(NSString *)attributeTypeString;
 - (NSString *)typeStringFromAttribute:(NSAttributeDescription *)attributeDescription;
--(NSDictionary *)dictionaryFromManagedObject:(NSManagedObject *)managedObject;
+- (NSValue *)translateValue:(NSValue *)value forAttribute:(NSAttributeDescription *)attribute;
+- (NSDictionary *)dictionaryFromManagedObject:(NSManagedObject *)managedObject;
 
 @end

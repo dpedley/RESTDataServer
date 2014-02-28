@@ -673,6 +673,7 @@ CA
                                         <binding destination="TWF-ec-RXc" name="content" keyPath="arrangedObjects" id="qRH-da-Hrn"/>
                                         <outlet property="addButton" destination="LCn-RU-xZc" id="AZp-1C-hBR"/>
                                         <outlet property="deleteButton" destination="skd-BM-Cbr" id="llg-Pu-rgY"/>
+                                        <outlet property="duplicateButton" destination="iUS-q4-mLZ" id="Ogy-2Y-umv"/>
                                         <outlet property="entityController" destination="TWF-ec-RXc" id="TYB-wM-fBf"/>
                                     </connections>
                                 </tableView>

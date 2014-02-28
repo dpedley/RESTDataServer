@@ -7,6 +7,7 @@
 //
 
 #import "RDSEntityTableView.h"
+#import "RDSDateTransformer.h"
 #import "RDSNumberTransformer.h"
 
 @interface RDSEntityTableView ()
@@ -39,6 +40,8 @@
     self.dataSource = self;
     self.deleteButton.hidden = YES;
     [self.deleteButton setEnabled:NO];
+    self.duplicateButton.hidden = YES;
+    [self.duplicateButton setEnabled:NO];
     self.addButton.hidden = YES;
     [self registerForCoreDataChanges];
 }
@@ -55,6 +58,8 @@
     {
         self.deleteButton.hidden = YES;
         [self.deleteButton setEnabled:NO];
+        self.duplicateButton.hidden = YES;
+        [self.duplicateButton setEnabled:NO];
         self.addButton.hidden = YES;
         self.entityController.entityName = nil;
         self.entityController.managedObjectContext = nil;
@@ -64,6 +69,7 @@
     // Enable UI
     
     self.deleteButton.hidden = NO;
+    self.duplicateButton.hidden = NO;
     self.addButton.hidden = NO;
     
     // Load table
@@ -110,6 +116,13 @@
                             break;
                             
                         case NSDateAttributeType:
+                        {
+                            RDSDateTransformer *dateTransformer = [[RDSDateTransformer alloc] init];
+                            [options addEntriesFromDictionary: @{
+                                                                 NSValueTransformerNameBindingOption: @"RDSDateTransformer",
+                                                                 NSValueTransformerBindingOption: dateTransformer
+                                                                 }];
+                        }
                             break;
                             
                         case NSBinaryDataAttributeType:
@@ -144,6 +157,13 @@
     [self reloadData];
 }
 
+//-(BOOL)textShouldBeginEditing:(NSText *)textObject
+//{
+//    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:self.entityController.entityName inManagedObjectContext:context];
+//
+//    
+//}
+
 -(void)textDidEndEditing:(NSNotification *)notification
 {
     [super textDidEndEditing:notification];
@@ -166,10 +186,12 @@
     if (self.selectedRow>=0)
     {
         [self.deleteButton setEnabled:YES];
+        [self.duplicateButton setEnabled:YES];
     }
     else
     {
         [self.deleteButton setEnabled:NO];
+        [self.duplicateButton setEnabled:NO];
     }
 }
 

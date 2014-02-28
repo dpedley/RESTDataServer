@@ -169,9 +169,11 @@ static NSMutableDictionary *clientsByURL = nil;
 
 #pragma mark - Register Class
 
--(void)registerClass:(Class)aManagedObjectClass usingDescription:(NSEntityDescription *)entityDescription completion:(RDSClientRegisterCompletion)completion
+-(void)registerClass:(Class)aManagedObjectClass fromContext:(NSManagedObjectContext *)context completion:(RDSClientRegisterCompletion)completion
 {
     __block NSString *aManagedObjectClassName = [aManagedObjectClass description];
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:aManagedObjectClassName
+                                                         inManagedObjectContext:context];
     NSString *aManagedObjectSchemaName = [NSString stringWithFormat:@"{%@}", aManagedObjectClassName];
     
     // First fetch the baseURL/{aManagedObjectClass} schema to see if it exists

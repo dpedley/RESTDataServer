@@ -56,10 +56,8 @@
         NSLog(@"rdsLoad");
         RDSClient *rds = [RDSClient clientToServer:[NSURL URLWithString:@"http://127.0.0.1:41771/"]];
         NSManagedObjectContext *context = [NSManagedObjectContext MR_rootSavingContext];
-        NSEntityDescription *entity = [NSEntityDescription entityForName:@"TestEntity" inManagedObjectContext:context];
-        
         [rds registerClass:[TestEntity class]
-          usingDescription:entity
+               fromContext:context
                 completion:^(BOOL success, NSDictionary *schema) {
                     NSLog(@"Class schema: %@", schema);
                     if (success) {

@@ -57,6 +57,7 @@
 		CDC2338718A9F769007EB6A1 /* RDSNumberTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2338618A9F769007EB6A1 /* RDSNumberTransformer.m */; };
 		CDC2338C18AAA560007EB6A1 /* RDSEntityTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2338B18AAA560007EB6A1 /* RDSEntityTableView.m */; };
 		CDD6C8F018A417DB0066A9CB /* RDSCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD6C8EF18A417DB0066A9CB /* RDSCoreDataStack.m */; };
+		CDF57BAB18BC12A10055106A /* RDSDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF57BAA18BC12A10055106A /* RDSDateTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,8 @@
 		CDC2338B18AAA560007EB6A1 /* RDSEntityTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDSEntityTableView.m; sourceTree = "<group>"; };
 		CDD6C8EE18A417DB0066A9CB /* RDSCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSCoreDataStack.h; sourceTree = "<group>"; };
 		CDD6C8EF18A417DB0066A9CB /* RDSCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDSCoreDataStack.m; sourceTree = "<group>"; };
+		CDF57BA918BC12A10055106A /* RDSDateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSDateTransformer.h; sourceTree = "<group>"; };
+		CDF57BAA18BC12A10055106A /* RDSDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDSDateTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +454,8 @@
 			children = (
 				CDC2338518A9F769007EB6A1 /* RDSNumberTransformer.h */,
 				CDC2338618A9F769007EB6A1 /* RDSNumberTransformer.m */,
+				CDF57BA918BC12A10055106A /* RDSDateTransformer.h */,
+				CDF57BAA18BC12A10055106A /* RDSDateTransformer.m */,
 				CD1C09FA189CB712006AB14F /* RDSFetchRequest.h */,
 				CD1C09FB189CB712006AB14F /* RDSFetchRequest.m */,
 				CD1C09FD189CBA84006AB14F /* RDSCreateRequest.h */,
@@ -595,6 +600,7 @@
 				CD1C0540189AF09C006AB14F /* DDData.m in Sources */,
 				CD1C040A189AED9D006AB14F /* RDSAppDelegate.m in Sources */,
 				CD1C054D189AF09C006AB14F /* HTTPErrorResponse.m in Sources */,
+				CDF57BAB18BC12A10055106A /* RDSDateTransformer.m in Sources */,
 				CD1C05BB189AF09C006AB14F /* DispatchQueueLogFormatter.m in Sources */,
 				CD1C05B5189AF09C006AB14F /* DDAbstractDatabaseLogger.m in Sources */,
 				CD1C054C189AF09C006AB14F /* HTTPDynamicFileResponse.m in Sources */,

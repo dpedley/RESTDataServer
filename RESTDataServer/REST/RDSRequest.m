@@ -98,6 +98,19 @@ static NSString *__basePath = nil;
     return [[self alloc] initWithRequest:request connection:connection method:method URI:path];
 }
 
+#pragma mark - Utilities
+
+- (NSDateFormatter *)standardDateFormatter
+{
+    static NSDateFormatter *__standardDateFormatter = nil;
+    if (!__standardDateFormatter)
+    {
+        __standardDateFormatter = [[NSDateFormatter alloc] init];
+    }
+    
+    return __standardDateFormatter;
+}
+
 - (NSString *)attributeValueClassNameFromType:(NSAttributeType)attributeType
 {
     switch (attributeType)
@@ -128,6 +141,47 @@ static NSString *__basePath = nil;
             break;
     }
     return @"NSUnknown";
+}
+
+-(NSValue *)translateValue:(NSValue *)value forAttribute:(NSAttributeDescription *)attribute
+{
+    switch (attribute.attributeType)
+    {
+            // These types don't need translation
+        case NSInteger16AttributeType:
+        case NSInteger32AttributeType:
+        case NSInteger64AttributeType:
+        case NSDecimalAttributeType:
+        case NSDoubleAttributeType:
+        case NSFloatAttributeType:
+        case NSBooleanAttributeType:
+        case NSStringAttributeType:
+            return value;
+            break;
+            
+        case NSDateAttributeType:
+        {
+            // Convert a string to a date
+            if ([value isKindOfClass:[NSString class]])
+            {
+                NSString *dateString = (NSString *)value;
+                return [[self standardDateFormatter] dateFromString:dateString];
+            }
+        }
+            break;
+            
+        case NSBinaryDataAttributeType:
+        {
+            NSAssert(YES, @"need to do base64 translation here.");
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    NSLog(@"weird attribute: %@", attribute);
+    return nil;
 }
 
 - (NSAttributeType)attributeTypeFromString:(NSString *)attributeTypeString
